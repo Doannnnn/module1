@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            background-color: aquamarine;
+            text-align: left;
+        }
+        span, h3 {
+            color: blue;
+        }
+        table {
+            background-color: #ffe084;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form action="demo" method="post">
+            <tr>
+                <th>
+                    <h3>ĐĂNG KÝ HỌC VIÊN</h3>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 30px;">Họ và tên</span>
+                    <input type="text" name="yourname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:27px">Ngày sinh</span>
+                    <input type="text" name="date">              
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:35px">Giới tính</span>
+                    <input type="radio" name="gender"> Nam
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:45px">Địa chỉ</span>
+                    <textarea rows="2" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:66px">Lớp</span>
+                    <select>
+                        <option>Chọn lớp</option>
+                        <option>2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:54px">Email</span>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right:25px">Điện thoại</span>
+                    <input type="text" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 97px;">
+                    <Button type="submit">Đăng ký</Button>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>         
+        </form>
+    </table>
+</body>
+</html>
