@@ -1,4 +1,4 @@
-function chageMoney(){
+function Money(){
     let Amount = document.getElementById("Amount").value;
     let From = document.getElementById("From").value;
     let To = document.getElementById("To").value;
