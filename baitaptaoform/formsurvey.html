@@ -7,42 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Market Reseach Survey</h3>
-    <p>Phease take a few moments to complete this satifaction survey.</p>
-    <form action="demo" method="get">
-        <label for="age">What is your age range?</label><br>
-    <select name="age" id="age" style="width: 50%;">
-        <option value="age">18 - 24</option>
-        <option value="age">25 - 34</option>
-        <option value="age">35 - 50</option>
-        <option value="age">50+</option>
-    </select><br><br>
-    <label for="money">What is your yearly income range?</label><br>
+    <div>
+        <h3>Market Reseach Survey</h3>
+        <p>Phease take a few moments to complete this satifaction survey.</p>
+    </div>
+    <div>
+        <form action="demo" method="get">
+            <label for="age">What is your age range?</label><br>
+        <select name="age" id="age" style="width: 50%;">
+            <option value="age">18 - 24</option>
+            <option value="age">25 - 34</option>
+            <option value="age">35 - 50</option>
+            <option value="age">50+</option>
+        </select><br><br>
+    </div>
+    <div>
+        <label for="money">What is your yearly income range?</label><br>
     <select name="money" id="money" style="width: 50%;">
         <option value="money">$0 - $25,000</option>
         <option value="money">$25,001 - $50,000</option>
         <option value="money">$50,001 - 100,000</option>
         <option value="money">$100,000+</option>
     </select><br><br>
-    <label for="gender">Gender Identity</label><br>
+    </div>
+    <div>
+        <label for="gender">Gender Identity</label><br>
     <input type="radio" name="gender" id="gender">Male<br>
     <input type="radio" name="gender" id="gender">Female<br>   
     <input type="radio" name="gender" id="gender">Nonbilary<br>
     <input type="radio" name="gender" id="gender">Other<br>
     <input type="text"><br><br>
-    <label for="product">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+    </div>
+    <div>
+        <label for="product">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
     <input type="checkbox" name="Product" id="Product">Product 1<br>
     <input type="checkbox" name="Product" id="Product">Product 2<br>
     <input type="checkbox" name="Product" id="Product">Product 3<br><br>
-    <label for="question">How often would you use our new product?</label><br>
+    </div>
+    <div>
+        <label for="question">How often would you use our new product?</label><br>
     <input type="radio" name="question" id="question">Daily<br>
     <input type="radio" name="question" id="question">Weekly<br>
     <input type="radio" name="question" id="question">Monthly<br><br>
-    <label for="denominations">what would you pay for the new product?</label><br>
+    </div>
+    <div>
+        <label for="denominations">what would you pay for the new product?</label><br>
     $ <input type="text" name="denominations" id="denominations" style="width: 5%;"> . <input type="text" name="denominations" id="denominations" style="width: 1%;"><br>
     <span style="padding-left: 15px;">Dollars</span><span style="padding-left: 58px;">Cents</span><br><br>
-    <label>What features would you like to see in the new product.</label><br>
+    </div>
+    <div>
+        <label>What features would you like to see in the new product.</label><br>
     <textarea cols="230" rows="10"></textarea>
+    </div>
     </form>  
 </body>
 </html>
