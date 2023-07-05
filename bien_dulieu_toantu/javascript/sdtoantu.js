@@ -8,3 +8,4 @@ var width = parseInt(inputWidth);
 var height = parseInt(inputHeight);
 var area = width * height;
 document.write('the area is: ' + area);
+"1"+2+4
