@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập số m" id="meters">
+    <input type="button" value="convert" onclick="change()">
+    <p id="result"></p>
+    <script>
+        function change() {
+            let meters = document.getElementById("meters").value;
+            let feet = meters * 3.28084;
+            document.getElementById("result").innerText = feet + " feet";
+        }
+    </script>
+</body>
+</html>
