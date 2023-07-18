@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Nhập từ cần dịch" id="dich">
+    <input type="button" value="Dịch" onclick="eventClick()">
+    <p id="result"></p>
+    <script>
+        function eventClick() {
+            let arrVie = ["chó", "mèo", "trâu", "khỉ", "bò", "sư tử"]
+            let arrEng = ["Dog", "Cat", "Buffalo", "Monkhi", "Cow", "Lemon"]
+            let transfer = document.getElementById("dich").value;
+            let index_Vie = 0;
+            let result = "";
+            for (let i = 0; i < arrVie.length; i++) {
+                if (transfer == arrVie[i]) {
+                    index_Vie = i; 
+                    for (let j = 0; j < arrEng.length; j++) {
+                        if (index_Vie == j) { 
+                            result = arrEng[j]; 
+                        }
+                    }
+                }
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+        
+    </script>
+</body>
+
+</html>
