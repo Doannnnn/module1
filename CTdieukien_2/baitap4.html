@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập số a" id="numbera" size="5">
+    <input type="text" placeholder="Nhập số b" id="numberb" size="5"> 
+    <input type="text" placeholder="Nhập số c" id="numberc" size="5">
+    <input type="button" value="Check" onclick="checkGreatestvalue()">
+    <p id="result"></p>
+
+    <script>
+        function checkGreatestvalue() {
+            let a = document.getElementById("numbera").value;
+        let b = document.getElementById("numberb").value;
+        let c = document.getElementById("numberc").value;
+        if (a > b && a > c) {
+            document.getElementById("result").innerText = a + " là giá trị lớn nhất";
+        } else if (b > a && b > c) {
+            document.getElementById("result").innerText = b + " là giá trị lớn nhất";
+        } else {
+            document.getElementById("result").innerText = c + " là giá trị lớn nhất";
+        }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><input type="checkbox" id="good" onclick="eventOnclick()">Good</p>
+    <p><input type="checkbox" id="fast" onclick="eventOnclick()">Fast</p>
+    <p><input type="checkbox" id="cheap" onclick="eventOnclick()">Cheap</p>
+
+    <script>
+        function eventOnclick(){
+            let good = document.getElementById("good").checked;
+            let fast = document.getElementById("fast").checked;
+            let cheap = document.getElementById("cheap").checked;
+            if (good && fast) {
+                document.getElementById("cheap").disabled = true;
+            } else if (fast && cheap) {
+                document.getElementById("good").disabled = true;
+            } else if (good && cheap) {
+                document.getElementById("fast").disabled = true;
+            }
+             else {
+                document.getElementById("good").disabled = false;
+                document.getElementById("fast").disabled = false;
+                document.getElementById("cheap").disabled = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

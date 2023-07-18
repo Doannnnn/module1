@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numbera" type="text" placeholder="Nhập số a">
+    <input id="numberb" type="text" placeholder="Nhập số b">
+    <input type="button" value="Check" onclick="check()">
+    <p id="result"></p>
+    <script>
+        function check() {
+            let numbers1 = document.getElementById("numbera").value;
+            let numbers2 = document.getElementById("numberb").value;
+            if (numbers1 % numbers2 == 0) {
+                document.getElementById("result").innerHTML = "Result: " + numbers1 + " chia hết cho " + numbers2;
+            } else {
+                document.getElementById("result").innerHTML = "result: " + numbers1 + " không chia hết cho " + numbers2;
+            }
+        }
+    </script>
+</body>
+</html>
